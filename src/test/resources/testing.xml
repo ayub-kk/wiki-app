@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Wikipedia Test Suite" parallel="tests" thread-count="2">
+
+    <test name="Web Tests" verbose="2">
+        <classes>
+            <class name="web.tests.WikipediaWebTests"/>
+        </classes>
+    </test>
+
+    <test name="Mobile Tests" verbose="2">
+        <classes>
+            <class name="mobile.tests.WikipediaMobileTests"/>
+        </classes>
+    </test>
+
+</suite>
